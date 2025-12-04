@@ -10,18 +10,18 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-FROM  ghcr.io/truatpasteurdotfr/alphafold:main
+#FROM  ghcr.io/truatpasteurdotfr/alphafold:main
+FROM  ghcr.io/truatpasteurdotfr/alphafold-conda-forge:main
 
 # Install conda packages.
 ENV PATH="/opt/conda/bin:$PATH"
-RUN conda update -qy conda \
-    && conda install -y -c conda-forge \
+RUN && conda install -qy \
       pymol-open-source \
       ipykernel \
       jupyterlab \
       py3dmol \
       matplotlib \
-    && conda clean --all --yes
+    && conda clean --all --force-pkgs-dirs --yes
 
 # pymol runtime
 RUN	apt-get update &&  \

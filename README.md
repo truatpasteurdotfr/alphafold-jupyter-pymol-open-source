@@ -1,4 +1,4 @@
-# Jupyter extension for the alphafold docker image 
+# Jupyter extension for the alphafold docker image (2025/12/04  conda-forge based)
 [![Docker](https://github.com/truatpasteurdotfr/alphafold-jupyter-pymol-open-source/actions/workflows/main.yml/badge.svg)](https://github.com/truatpasteurdotfr/alphafold-jupyter-pymol-open-source/actions/workflows/main.yml)
 ## why?
 - to be able to re-use the pkl/pdb files saved to display as on the colab page

@@ -15,7 +15,7 @@ FROM  ghcr.io/truatpasteurdotfr/alphafold-conda-forge:main
 
 # Install conda packages.
 ENV PATH="/opt/conda/bin:$PATH"
-RUN && conda install -qy \
+RUN conda install -qy \
       pymol-open-source \
       ipykernel \
       jupyterlab \
